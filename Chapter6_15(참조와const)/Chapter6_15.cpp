@@ -2,6 +2,8 @@
 	참조와 const
 	함수의 파라미터로 참조를 사용할 때 좋다
 
+	참조 매개변수에 const를 붙이면 literal(숫자,string.. 값들)을 바로 붙일 수 있다
+
 */
 #include <iostream>
 

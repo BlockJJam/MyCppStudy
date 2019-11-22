@@ -22,9 +22,9 @@ void foo(const int &x)				// Modern C++ 입력인자는 변경 X되게(Const int &) 반환�
 	cout << x << endl;
 }
 
-typedef int* pint;
 
 // void foo2(int* &ptr)
+typedef int* pint;
 void foo2(pint ptr)
 {
 	cout << ptr << " " << &ptr << endl;

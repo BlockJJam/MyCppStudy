@@ -75,13 +75,21 @@ int main()
 	cout << bitset<32>(green_mask) << endl;
 	cout << bitset<32>(blue_mask) << endl;
 
-	unsigned char red, green, blue;
+	unsigned int red, green, blue;
 
-	red = ( pixel_color & red_mask) >>16;
+	/*red = ( pixel_color & red_mask) >>16;
 	green = (pixel_color & green_mask) >> 8;
 	blue = pixel_color & blue_mask;
 	cout << "red rgb    : "<< bitset<8>(red) << endl;
 	cout << "green rgb  : " << bitset<8>(green) << endl;
-	cout << "blue rgb   : " << bitset<8>(blue) << endl;
+	cout << "blue rgb   : " << bitset<8>(blue) << endl;*/
+
+	red = pixel_color & red_mask;
+	green = pixel_color & green_mask;
+	blue = pixel_color & blue_mask;
+	cout << "red rgb    : " << bitset<32>(red) << endl;
+	cout << "green rgb  : " << bitset<32>(green) << endl;
+	cout << "blue rgb   : " << bitset<32>(blue) << endl;
+
 	return 0;
 }

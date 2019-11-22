@@ -43,7 +43,7 @@ public:
 		: _value(init_value)
 	{}
 
-	Calc& add(int value)		// 자기자신을 호출할 수 있게
+	Calc& add(int value)		// 자기자신을 호출할 수 있게 참조로 함수 정의
 	{
 		_value += value;
 		return *this;
